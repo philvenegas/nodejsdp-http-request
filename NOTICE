@@ -1,0 +1,5 @@
+The code samples in examples/ are adapted from "How to make an HTTP request
+in Node.js" (https://nodejsdesignpatterns.com/blog/nodejs-http-request/),
+Copyright (c) 2014-2026 Mario Casciaro, Luciano Mammino, Packt Publishing.
+They are reproduced with attribution for learning purposes and are not
+covered by the license above.

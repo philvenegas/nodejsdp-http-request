@@ -70,3 +70,7 @@ These hit real endpoints and work as-is: `02`, `03`, `10`, `18`, `19`, and `npm 
 
 The rest use placeholder URLs from the article (`api.example.com`, `example.com/large-file`,
 `./large-video.mp4`) and are there to read, not to run — point them at a real endpoint first.
+
+## License
+
+[ISC](LICENSE) for this repo. The example code is from the Node.js Design Patterns blog and stays under its authors' copyright; see [NOTICE](NOTICE).
