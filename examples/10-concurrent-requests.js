@@ -1,7 +1,9 @@
-// Promise.all() runs the requests concurrently and fails fast.
-// For hundreds of URLs, limit concurrency instead.
+// Promise.all() runs the requests concurrently
+// and fails fast.
+// For hundreds of URLs, limit concurrency
+// instead.
 
-function delay(ms) {
+function _delay(ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
@@ -9,9 +11,9 @@ function delay(ms) {
 
 async function fetchMultipleUsers(userIds) {
   const requests = userIds.map((id) =>
-    fetch(`https://jsonplaceholder.typicode.com/users/${id}`).then((res) =>
-      res.json(),
-    ),
+    fetch(
+      `https://jsonplaceholder.typicode.com/users/${id}`,
+    ).then((res) => res.json()),
   );
   // const delays = [100, 100, 100].map((ms) => delay(ms));
   // console.log(delays);
@@ -22,7 +24,9 @@ async function fetchMultipleUsers(userIds) {
 }
 
 // Usage
-const users = await fetchMultipleUsers([1, 2, 3, 4, 5]);
+const users = await fetchMultipleUsers([
+  1, 2, 3, 4, 5,
+]);
 console.log(`Fetched ${users.length} users`);
 users.forEach((user) => {
   console.log(`- ${user.name}`);
